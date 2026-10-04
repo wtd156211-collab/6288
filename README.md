@@ -109,3 +109,12 @@ step ops user_bytes disk_bytes live_bytes wa ra reclaim view_lines L0_segs L0_ro
 - 崩溃恢复与 WAL、后台合并、Bloom 过滤器；段格式的版本字段与迁移。
 - 百万条操作的目标机器与预算；报告配色与超大样例的渲染上限。
 - 算样例与期望值用的临时脚本不入库。
+
+## 八、实现说明
+
+- 包结构：`segmerge/workload.py`（负载解析与校验）、`segmerge/segment.py`（段编码、新旧次序）、
+  `segmerge/engine.py`（逐步重放、越限合并、墓碑回收、指标与视图）、`segmerge/checker.py`
+  （视图/门槛/容量核对）、`segmerge/page.py`（自包含报告页）、`segmerge/cli.py`（四条子命令）。
+- 补充输出：`run` 除三个约定文件外另写 `layout.tsv`（每步每个存活段一行：
+  `step level segno rows tombstones bytes`），专供报告页画段布局；约定输出的格式不变。
+- 测试：`python -m unittest discover`，只读 `samples/`，输出都写临时目录。

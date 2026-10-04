@@ -1,0 +1,110 @@
+# step 1
+rep:00	s01-r09
+rep:01	s01-r09
+rep:02	s01-r09
+rep:03	s01-r09
+rep:04	s01-r09
+rep:05	s01-r09
+rep:06	s01-r09
+rep:07	s01-r09
+rep:08	s01-r09
+rep:09	s01-r09
+# step 2
+rep:00	s02-r09
+rep:01	s02-r09
+rep:02	s02-r09
+rep:03	s02-r09
+rep:04	s02-r09
+rep:05	s02-r09
+rep:06	s02-r09
+rep:07	s02-r09
+rep:08	s02-r09
+rep:09	s02-r09
+# step 3
+rep:00	s03-r09
+rep:01	s03-r09
+rep:02	s03-r09
+rep:03	s03-r09
+rep:04	s03-r09
+rep:05	s03-r09
+rep:06	s03-r09
+rep:07	s03-r09
+rep:08	s03-r09
+rep:09	s03-r09
+# step 4
+rep:00	s04-r09
+rep:01	s04-r09
+rep:02	s04-r09
+rep:03	s04-r09
+rep:04	s04-r09
+rep:05	s04-r09
+rep:06	s04-r09
+rep:07	s04-r09
+rep:08	s04-r09
+rep:09	s04-r09
+# step 5
+rep:00	s05-r09
+rep:01	s05-r09
+rep:02	s05-r09
+rep:03	s05-r09
+rep:04	s05-r09
+rep:05	s05-r09
+rep:06	s05-r09
+rep:07	s05-r09
+rep:08	s05-r09
+rep:09	s05-r09
+# step 6
+rep:00	s06-r09
+rep:01	s06-r09
+rep:02	s06-r09
+rep:03	s06-r09
+rep:04	s06-r09
+rep:05	s06-r09
+rep:06	s06-r09
+rep:07	s06-r09
+rep:08	s06-r09
+rep:09	s06-r09
+# step 7
+rep:00	s07-r09
+rep:01	s07-r09
+rep:02	s07-r09
+rep:03	s07-r09
+rep:04	s07-r09
+rep:05	s07-r09
+rep:06	s07-r09
+rep:07	s07-r09
+rep:08	s07-r09
+rep:09	s07-r09
+# step 8
+rep:00	s08-r09
+rep:01	s08-r09
+rep:02	s08-r09
+rep:03	s08-r09
+rep:04	s08-r09
+rep:05	s08-r09
+rep:06	s08-r09
+rep:07	s08-r09
+rep:08	s08-r09
+rep:09	s08-r09
+# step 9
+rep:00	s09-r09
+rep:01	s09-r09
+rep:02	s09-r09
+rep:03	s09-r09
+rep:04	s09-r09
+rep:05	s09-r09
+rep:06	s09-r09
+rep:07	s09-r09
+rep:08	s09-r09
+rep:09	s09-r09
+# step 10
+rep:00	s10-r09
+rep:01	s10-r09
+rep:02	s10-r09
+rep:03	s10-r09
+rep:04	s10-r09
+rep:05	s10-r09
+rep:06	s10-r09
+rep:07	s10-r09
+rep:08	s10-r09
+rep:09	s10-r09
