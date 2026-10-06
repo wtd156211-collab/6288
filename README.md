@@ -57,14 +57,15 @@ python -m segmerge check <样例根目录>
 python -m segmerge page  <样例根目录> <页面.html>
 ```
 
-`run` 在输出目录写 `seg-<六位段号>.seg`、`report.tsv` 与 `views.txt`；`report.tsv` 首行表头，之后每步一行：
+`run` 在输出目录写 `seg-<六位段号>.seg`、`report.tsv`、`views.txt` 与 `layout.tsv`；`report.tsv` 首行表头，之后每步一行：
 
 ```text
 step ops user_bytes disk_bytes live_bytes wa ra reclaim view_lines L0_segs L0_rows L1_segs L1_rows L2_segs L2_rows L3_segs L3_rows L4_segs L4_rows merges
 ```
 
 `L<n>_segs` 与 `L<n>_rows` 按存活段文件统计，`merges` 是累计合并次数。`views.txt` 每步一组：`# step <步号>` 一行，
-其后每行 `键<TAB>值`。
+其后每行 `键<TAB>值`。`layout.tsv` 首行表头 `step level seg rows tomb_rows bytes`，之后每步按存活段一行，
+记录段号、行数、墓碑行数与落盘字节，供页面画段布局。
 
 期望：`samples/expected/<名>.views.txt` 与 `views.txt` 逐字节相同；`samples/expected/<名>.marks.tsv` 表头
 `step wa_max ra_max reclaim_min`，之后每步一行、三个数都是三位小数：该步写放大 ≤ `wa_max`、读放大 ≤ `ra_max`（结构上限 40）、
@@ -74,8 +75,9 @@ step ops user_bytes disk_bytes live_bytes wa ra reclaim view_lines L0_segs L0_ro
 否则每处一行 `mismatch=<名>`、退出码 1。`read` 命中打 `键<TAB>值`，不存在不输出；用法错或负载不合法退出码 2，
 错误走 stderr 一行 `error: …`。
 
-报告：`page` 写自包含 HTML——内联样式、图形只用内联 SVG、无外链、`file://` 双击即开。按负载分节，画每步各层的段数与
-行数、三个指标走势（门槛画虚线）与核对结论；顶部汇总负载数、步数与通过数。数字只取自 `report.tsv` 与期望文件。
+报告：`page` 写自包含 HTML——内联样式、图形只用内联 SVG、无外链、`file://` 双击即开。按负载分节，画每步之后的段布局
+（每列一步、每段一行、按层分带，宽度为落盘字节、颜色深浅为墓碑占比）、每步各层的段数与行数、三个指标走势
+（门槛画虚线）与核对结论；顶部汇总负载数、步数与通过数。数字只取自 `report.tsv`、`layout.tsv` 与期望文件。
 
 ## 五、性能与验收口径
 

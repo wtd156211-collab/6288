@@ -1,0 +1,29 @@
+STEP	1
+PUT	solo	one
+STEP	2
+PUT	solo	two
+STEP	3
+PUT	solo	a
+PUT	solo	b
+DEL	solo
+STEP	4
+PUT	solo	three
+STEP	5
+DEL	solo
+STEP	6
+DEL	solo
+STEP	7
+PUT	solo	four
+DEL	solo
+PUT	solo	five
+STEP	8
+PUT	solo	six
+STEP	9
+DEL	solo
+PUT	solo	seven
+STEP	10
+PUT	solo	eight
+STEP	11
+PUT	solo	nine
+STEP	12
+DEL	solo

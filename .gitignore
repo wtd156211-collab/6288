@@ -1,0 +1,5 @@
+var/
+__pycache__/
+*.py[cod]
+page.html
+report.html

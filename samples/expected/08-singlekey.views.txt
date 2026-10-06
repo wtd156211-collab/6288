@@ -1,0 +1,20 @@
+# step 1
+solo	one
+# step 2
+solo	two
+# step 3
+# step 4
+solo	three
+# step 5
+# step 6
+# step 7
+solo	five
+# step 8
+solo	six
+# step 9
+solo	seven
+# step 10
+solo	eight
+# step 11
+solo	nine
+# step 12
